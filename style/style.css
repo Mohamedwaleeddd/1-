@@ -1,0 +1,322 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-weight: 200;
+  text-decoration: none;
+  color: whitesmoke;
+  transition: 0.50s;
+  font-family: 'Inknut Antiqua', sans-serif;
+}
+body{
+  background: #000;
+}
+.logo{
+  font-family: 'Keania One', sans-serif;
+  font-size: 30px;
+}
+nav .logo{
+  font-size: 35px;
+}
+nav a{
+  font-size: 15px;
+}
+nav{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow:inset 1px 1px 50px #111;
+  padding-right: 30px;  
+  border-bottom: 1px solid #222;
+  height: 50px;
+  background: #000;
+  justify-content: space-between;
+}
+
+nav a{
+  margin-left: 20px;
+}
+header{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow:inset 1px 1px 50px #111;
+  padding-right: 30px;  
+  border-bottom: 1px solid #222;
+  height: 50px;
+  background: #000;
+  justify-content: space-between;
+}
+header svg, nav svg{
+  height: 25px;
+  fill: whitesmoke;
+}
+#show{
+  position: relative;
+  border-radius: 10px;
+  padding: 10px;
+  display: grid;
+  height: 20px;
+  place-items: center;
+  z-index: 99999999;
+  box-shadow: inset 1px 1px 7px #333;
+}
+.line{
+  width: 30px;
+  border-radius: 1px;
+  height: 3px;
+  background: #F3F3F3;
+}
+.line2{
+  margin-top: 5px;
+  width: 30px;
+  border-radius: 1px;
+  height: 3px;
+  background: #F3F3F3;
+}
+
+#l2{
+  margin-left: 3px;
+  width: 19px;
+}
+.landing{
+    background-image: url(../imgs/bg.webp);
+    background-size: cover;
+    height: 100vh;
+    place-items: center;
+    display: grid;
+    background-attachment: fixed;
+    position: relative;
+}
+.landing .content{
+  color: #fff ;
+  height: 100vh;
+  display: grid;
+  width: 100%;
+  place-items: center;
+  position: sticky;
+  background: #0000008a;
+}
+.landing div h1 ,.landing div p{
+  color: #fff;
+}
+.landing button{
+  width: 100px;
+  height: 33px;
+  color: white;
+  border: 2px white solid;
+  border-radius: 5px;
+  background: none;
+  font-family: sans-serif;
+  transition: 0.60s;
+}
+button:hover{
+  background: white;
+  color: #222;
+}
+.landing h1{
+  font-size: 25px;
+}
+aside{
+  z-index: 999999999999999999;
+  position: fixed;
+  padding: 15px;
+  height: 450px;
+  border-radius: 10px;
+  margin-top: 10vh;
+  color: #fff;
+  width: 200px;
+  backdrop-filter: blur(5px);
+  display: grid;
+  color: #fff;
+  list-style-type: none;
+  background: #0000008e;
+  place-items: center;
+}
+aside a{
+  color: #fff;
+}
+#l1{
+  margin-top: 0;
+}
+::selection{
+  background: #ffffffb0;
+  color: #000;
+}
+footer{
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer svg{
+  margin-left: 10px;
+  fill: whitesmoke;
+  height: 25px;
+}
+
+/*== The Title ==*/
+.title{
+  margin-left: 15%;
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  padding: 10px;
+  position: relative;
+}
+.title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 40px;
+  background: #F3F3F3;
+}
+
+/*== The Shop Page ==*/
+.products{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.product{
+  width: 270px;
+  position: relative;
+  margin-top: 20px;
+}
+
+.product img{
+  width: 100%;
+}
+
+.product h3{
+  font-family: 'Cairo';
+  font-size: 20px;
+}
+.product h2 span{
+  font-size: 12px;
+  color: #ddd;
+}
+/*== The Slider ==*/
+.container {
+  width: 300px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #000;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: #ffffff60;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.row img{
+  border-radius: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+@media(max-width: 900px){
+  nav{
+    display: none !important;
+  }
+  header{
+    display: flex !important;
+  }
+}
+
+@media(max-width: 1440px){
+  nav{
+    display: flex !important;
+  }
+  header{
+    display: none !important;
+  }
+}
+
+
+@media(max-width: 900px){
+  nav{
+    display: none !important;
+  }
+  header{
+    display: flex !important;
+  }
+}

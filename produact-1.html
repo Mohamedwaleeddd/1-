@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 1% | The 1% Tracksuit</title>
+
+  <!-- Style.css -->
+  <link rel="stylesheet" href="style/style.css">
+
+  <!-- logo font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Keania+One&display=swap" rel="stylesheet">
+
+ <!-- landing font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap" rel="stylesheet">
+
+ <!-- Card Font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div id="nav"></div>
+ <div id="header"></div>
+ <div id="sidebar"></div>
+ 
+ <!-- Slider -->
+ <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 2</div>
+      <img src="imgs/bg.webp" class="p-img">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 2</div>
+      <img src="imgs/product1.webp" class="-img">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="imgs/bg.webp" style="width:100px;max-height: 50px;object-fit: cover" onclick="currentSlide(1)" >
+    </div>
+    
+    <div class="column">
+      <img class="demo cursor" src="imgs/product1.webp" style="width:100px;max-height: 50px;object-fit: cover;margin-left: 30px;" onclick="currentSlide(3)">
+    </div>
+  </div>
+</div>
+
+<!-- Product Content -->
+<h2></h2>
+
+ <!-- Script -->
+ <script src="js/script.js"></script>
+</body>
+</html>
