@@ -16,6 +16,7 @@ body{
 }
 nav .logo{
   font-size: 35px;
+  margin-left: 30px;
 }
 nav a{
   font-size: 15px;
@@ -32,9 +33,6 @@ nav{
   justify-content: space-between;
 }
 
-nav a{
-  margin-left: 20px;
-}
 header{
   display: flex;
   align-items: center;
@@ -203,7 +201,9 @@ footer svg{
   width: 300px;
   position: relative;
 }
-
+.mySlides img{
+  width: 300px;
+}
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -309,6 +309,12 @@ footer svg{
   header{
     display: none !important;
   }
+  .mySlides img{
+    width: 400px;
+  }
+  .container{
+    width: 400px;
+  }
 }
 
 
@@ -319,4 +325,36 @@ footer svg{
   header{
     display: flex !important;
   }
+  .mySlides img{
+    width: 300px;
+  }
+  .container{
+    width: 300px;
+  }
+}
+main p, main h1{
+  font-family: 'Cairo';
+}
+main{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.contentt{
+  width: 350px;
+}
+.contentt button{
+  width: 100%;
+  font-size: 17px;
+  background: none;
+  border: 2px white solid;
+  font-family: 'Cairo';
+  margin-top: 10px;
+  font-weight: 500;
+  padding: 2px;
+  border-radius: 2px;
+}
+.contentt button:hover{
+  background: #fff;
 }
